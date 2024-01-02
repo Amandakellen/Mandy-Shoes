@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Mandy Shoes</string>
     <string name="slogan">"Step into Style, Walk in Confidence with Mandy Shoes!"</string>
+    <string name="init_button">Shop now</string>
 
 
 </resources>

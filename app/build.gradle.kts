@@ -7,6 +7,9 @@ android {
     namespace = "com.example.mandyshoes"
     compileSdk = 34
 
+    buildFeatures {
+        viewBinding = true}
+
     defaultConfig {
         applicationId = "com.example.mandyshoes"
         minSdk = 24

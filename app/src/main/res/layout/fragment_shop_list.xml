@@ -1,24 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/background"
+    android:orientation="vertical"
     android:padding="16dp">
 
-    <TextView
-        android:id="@+id/textViewTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:textSize="32sp"
-        android:text="@string/shoes_list_title" />
-
-    <ImageView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-</LinearLayout>
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shoes_list_title"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/high_heels"
+            android:layout_width="341dp"
+            android:layout_height="189dp"
+            android:src="@drawable/high_heels" />
+
+        <ImageView
+            android:id="@+id/tenis"
+            android:layout_width="424dp"
+            android:layout_height="291dp"
+            android:src="@mipmap/tenis_foreground" />
+
+        <ImageView
+            android:id="@+id/green_tenis"
+            android:layout_width="424dp"
+            android:layout_height="291dp"
+            android:src="@mipmap/green_tenis_foreground" />
+
+    </LinearLayout>
+
+</ScrollView>

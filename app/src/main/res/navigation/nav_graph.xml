@@ -41,7 +41,16 @@
         android:id="@+id/shopListFragment"
         android:name="com.example.mandyshoes.shoelisting.ShopListFragment"
         android:label="fragment_shop_list"
-        tools:layout="@layout/fragment_shop_list" />
+        tools:layout="@layout/fragment_shop_list" >
+        <action
+            android:id="@+id/action_shopListFragment_to_shopDetailFragment"
+            app:destination="@id/shopDetailFragment">
+            <argument
+                android:name="imageResId"
+                app:argType="integer"
+                android:defaultValue="0" />/>
+        </action>
+    </fragment>
     <fragment
         android:id="@+id/instructionsFragment"
         android:name="com.example.mandyshoes.instructions.InstructionsFragment"
@@ -51,4 +60,9 @@
             android:id="@+id/action_instructionsFragment_to_shopListFragment"
             app:destination="@id/shopListFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/shopDetailFragment"
+        android:name="com.example.mandyshoes.shopdetail.ShopDetailFragment"
+        android:label="fragment_shop_detail"
+        tools:layout="@layout/fragment_shop_detail" />
 </navigation>

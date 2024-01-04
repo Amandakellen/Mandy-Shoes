@@ -14,6 +14,9 @@
     <string name="instructions_step_2">2. View details of a shoe by clicking on the respective item.</string>
     <string name="instructions_step_3">3. Add your favorite items to the cart for easy checkout.</string>
     <string name="start_button">Start Exploring</string>
+    <string name="shoes_list_title">Click on the desired shoe to learn more</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

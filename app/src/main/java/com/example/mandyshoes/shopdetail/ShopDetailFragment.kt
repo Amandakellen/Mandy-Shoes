@@ -21,10 +21,13 @@ class ShopDetailFragment : Fragment() {
         return binding.root
     }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        setUpViews()
     }
 
-
+    private fun setUpViews() {
+        binding.shoesImage.setImageResource(requireArguments().getInt("imageResId"))
+        binding.description.text = requireArguments().getString("description")
+    }
 }

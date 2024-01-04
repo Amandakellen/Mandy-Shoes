@@ -34,8 +34,6 @@
         android:textStyle="bold"
         android:text="@string/onboarding_description" />
 
-    <!-- Adicione mais slides de Onboarding conforme necessário -->
-
     <Button
         android:id="@+id/next_button"
         android:layout_width="match_parent"

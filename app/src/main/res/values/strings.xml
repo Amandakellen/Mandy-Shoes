@@ -15,8 +15,10 @@
     <string name="instructions_step_3">3. Add your favorite items to the cart for easy checkout.</string>
     <string name="start_button">Start Exploring</string>
     <string name="shoes_list_title">Click on the desired shoe to learn more</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="buy_button">Buy now</string>
+    <string name="description_tenis">Versatile and comfortable sneakers suitable for various occasions. These sneakers provide a classic and timeless style, ensuring both style and comfort wherever you go.</string>
+    <string name="description_high_heels">Elegant and chic high heels designed for a sophisticated and polished look. The timeless design and elevated heel add a touch of glamour to your outfit, making them perfect for special occasions and evenings out.</string>
+    <string name="description_green_tenis">Stylish and comfortable green sneakers, perfect for a casual and trendy look. The vibrant green color adds a pop of freshness to your outfit, while the comfortable design ensures all-day wear. Step out in confidence with these fashion-forward green sneakers.</string>
 
 
 </resources>

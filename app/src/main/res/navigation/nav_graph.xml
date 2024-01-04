@@ -48,7 +48,12 @@
             <argument
                 android:name="imageResId"
                 app:argType="integer"
-                android:defaultValue="0" />/>
+                android:defaultValue="0" />
+            <argument
+                android:name="description"
+                app:argType="string"
+                android:defaultValue=""
+                />
         </action>
     </fragment>
     <fragment

@@ -30,20 +30,21 @@ class ShopListFragment : Fragment() {
     }
     private fun setUpViews(){
         binding.greenTenis.setOnClickListener{
-            setArgument(R.mipmap.green_tenis_foreground)
+            setArgument(R.mipmap.green_tenis_foreground, getString(R.string.description_green_tenis))
         }
 
         binding.highHeels.setOnClickListener{
-            setArgument(R.drawable.high_heels)
+            setArgument(R.drawable.high_heels, getString(R.string.description_high_heels))
 
         }
         binding.tenis.setOnClickListener{
-            setArgument(R.mipmap.tenis_foreground)
+            setArgument(R.mipmap.tenis_foreground, getString(R.string.description_tenis))
         }
     }
 
-    private fun setArgument(imageRes: Int){
-        val action = ShopListFragmentDirections.actionShopListFragmentToShopDetailFragment(imageRes)
+    private fun setArgument(imageRes: Int, description: String) {
+        val action = ShopListFragmentDirections
+            .actionShopListFragmentToShopDetailFragment(imageRes, description)
         findNavController().navigate(action)
     }
 }

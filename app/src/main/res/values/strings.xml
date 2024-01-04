@@ -6,6 +6,14 @@
     <string name="hint_password">Password</string>
     <string name="forgot_pass">Forgot Password?</string>
     <string name="login_button">Login</string>
+    <string name="instructions">Next</string>
+    <string name="onboarding_description">Explore our latest collection of stylish and comfortable shoes.</string>
+    <string name="onboarding_title">Welcome to Mandy Shoes</string>
+    <string name="instructions_title">How to Use Mandy Shoes App</string>
+    <string name="instructions_step_1">1. Explore our collection by tapping on the Browse button.</string>
+    <string name="instructions_step_2">2. View details of a shoe by clicking on the respective item.</string>
+    <string name="instructions_step_3">3. Add your favorite items to the cart for easy checkout.</string>
+    <string name="start_button">Start Exploring</string>
 
 
 </resources>

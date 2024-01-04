@@ -20,5 +20,35 @@
         android:id="@+id/loginFragment"
         android:name="com.example.mandyshoes.login.LoginFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_onboardingFragment"
+            app:destination="@id/onboardingFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_shopListFragment"
+            app:destination="@id/shopListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="com.example.mandyshoes.onboarding.OnboardingFragment"
+        android:label="fragment_onboarding"
+        tools:layout="@layout/fragment_onboarding" >
+        <action
+            android:id="@+id/action_onboardingFragment_to_instructionsFragment"
+            app:destination="@id/instructionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shopListFragment"
+        android:name="com.example.mandyshoes.shoelisting.ShopListFragment"
+        android:label="fragment_shop_list"
+        tools:layout="@layout/fragment_shop_list" />
+    <fragment
+        android:id="@+id/instructionsFragment"
+        android:name="com.example.mandyshoes.instructions.InstructionsFragment"
+        android:label="fragment_instructions"
+        tools:layout="@layout/fragment_instructions" >
+        <action
+            android:id="@+id/action_instructionsFragment_to_shopListFragment"
+            app:destination="@id/shopListFragment" />
+    </fragment>
 </navigation>

@@ -46,23 +46,6 @@ class ShopListFragment : Fragment() {
         })
     }
 
-    private fun setUpViews() {
-        binding.highHeels.setOnClickListener {
-            navigateToDetails()
-
-        }
-
-        binding.tenis.setOnClickListener {
-            viewModel.setArgument(2)
-            navigateToDetails()
-        }
-
-        binding.greenTenis.setOnClickListener {
-            viewModel.setArgument(3)
-            navigateToDetails()
-        }
-    }
-
     private fun navigateToDetails() {
         val imageRes = viewModel.imageResLiveData.value
         val description = viewModel.descriptionLiveData.value

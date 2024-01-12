@@ -9,6 +9,10 @@
         android:id="@+id/action_homeFragment_to_loginFragment"
         app:destination="@id/loginFragment" />
 
+    <action
+        android:id="@+id/action_global_instructionsFragment"
+        app:destination="@id/instructionsFragment" />
+
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.mandyshoes.home.HomeFragment"

@@ -43,7 +43,7 @@ class LoginViewModel() : ViewModel() {
         _pass.value = senha
     }
 
-    fun getErrorMessage() : String =  repository.getErrorMessage()
+    fun signOut() = repository.signOut()
 
     fun verifyLogin() : Deferred<Flow<Boolean>> {
         val result = viewModelScope.async {

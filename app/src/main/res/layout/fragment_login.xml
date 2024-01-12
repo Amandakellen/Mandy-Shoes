@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <!-- I used Constraint Layout in this case because it's easier to insert the view that is below the text fields with Constraint Layout, as the text fields are placed on top of it-->
 
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"

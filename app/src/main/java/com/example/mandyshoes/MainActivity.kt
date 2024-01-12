@@ -9,6 +9,7 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
 import androidx.navigation.NavDestination
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
 import com.example.mandyshoes.databinding.ActivityMainBinding
 import com.example.mandyshoes.login.viewModel.LoginViewModel
@@ -62,15 +63,22 @@ class MainActivity : AppCompatActivity() {
                 else -> false
             }
         }
+        configDrawerNavigation()
+    }
 
-//
-//        findNavController(R.id.nav_host_fragment).addOnDestinationChangedListener { nc: NavController, nd: NavDestination, args: Bundle? ->
-//            if (nd.id == nc.graph.startDestinationId) {
-//                drawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED)
-//            } else {
-//                drawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED)
-//            }
-//        }
+    private fun configDrawerNavigation(){
+        val navHostFragment = supportFragmentManager
+            .findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+        navHostFragment.navController
+            .addOnDestinationChangedListener {
+                nc: NavController, nd: NavDestination, args: Bundle? ->
+            if (nd.id == nc.graph.startDestinationId || nd.id == R.id.loginFragment) {
+                drawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED)
+            } else {
+                drawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED)
+
+            }
+        }
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

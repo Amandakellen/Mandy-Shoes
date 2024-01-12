@@ -49,15 +49,7 @@
         <action
             android:id="@+id/action_shopListFragment_to_shopDetailFragment"
             app:destination="@id/shopDetailFragment">
-            <argument
-                android:name="imageResId"
-                app:argType="integer"
-                android:defaultValue="0" />
-            <argument
-                android:name="description"
-                app:argType="string"
-                android:defaultValue=""
-                />
+
         </action>
     </fragment>
     <fragment

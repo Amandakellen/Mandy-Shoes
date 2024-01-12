@@ -4,11 +4,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <data>
-        <variable
-            name="viewModel"
-            type="com.example.mandyshoes.shoelisting.viewModel.ShopListViewModel" />
-    </data>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -34,22 +29,19 @@
                 android:id="@+id/high_heels"
                 android:layout_width="341dp"
                 android:layout_height="189dp"
-                android:src="@drawable/high_heels"
-                android:onClick="@{() -> viewModel.setArgument(1)}" />
+                android:src="@drawable/high_heels" />
 
             <ImageView
                 android:id="@+id/tenis"
                 android:layout_width="424dp"
                 android:layout_height="291dp"
-                android:src="@mipmap/tenis_foreground"
-                android:onClick="@{() -> viewModel.setArgument(2)}" />
+                android:src="@mipmap/tenis_foreground" />
 
             <ImageView
                 android:id="@+id/green_tenis"
                 android:layout_width="424dp"
                 android:layout_height="291dp"
-                android:src="@mipmap/green_tenis_foreground"
-                android:onClick="@{() -> viewModel.setArgument(3)}" />
+                android:src="@mipmap/green_tenis_foreground" />
         </LinearLayout>
     </ScrollView>
 </layout>

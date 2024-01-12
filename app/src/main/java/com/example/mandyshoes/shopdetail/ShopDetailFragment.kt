@@ -8,12 +8,14 @@ import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import com.example.mandyshoes.R
 import com.example.mandyshoes.databinding.FragmentShopDetailBinding
+import com.example.mandyshoes.shoelisting.viewModel.SharedViewModel
 import com.example.mandyshoes.shopdetail.viewModel.ShopDetailViewModel
 
 class ShopDetailFragment : Fragment() {
 
     private lateinit var binding: FragmentShopDetailBinding
     private lateinit var viewModel: ShopDetailViewModel
+    private lateinit var sharedViewModel: SharedViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -21,6 +23,7 @@ class ShopDetailFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentShopDetailBinding.inflate(inflater, container, false)
+        sharedViewModel = ViewModelProvider(requireActivity()).get(SharedViewModel::class.java)
         viewModel = ViewModelProvider(this).get(ShopDetailViewModel::class.java)
         binding.viewModel = viewModel
         binding.lifecycleOwner = this
@@ -40,7 +43,9 @@ class ShopDetailFragment : Fragment() {
 
     }
     private fun setUpViews() {
-        binding.shoesImage.setImageResource(requireArguments().getInt("imageResId"))
-        binding.description.text = requireArguments().getString("description")
+        binding.shoesImage
+            .setImageResource(
+                sharedViewModel.selectedItem.value?.imageResId ?: R.drawable.high_heels)
+        binding.description.text = (sharedViewModel.selectedItem.value?.description ?: "")
     }
 }

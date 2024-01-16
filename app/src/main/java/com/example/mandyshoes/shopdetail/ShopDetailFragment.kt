@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import com.example.mandyshoes.R
+import com.example.mandyshoes.data.ShoeItem
 import com.example.mandyshoes.databinding.FragmentShopDetailBinding
 import com.example.mandyshoes.shoelisting.viewModel.SharedViewModel
 import com.example.mandyshoes.shopdetail.viewModel.ShopDetailViewModel
@@ -43,9 +44,10 @@ class ShopDetailFragment : Fragment() {
 
     }
     private fun setUpViews() {
-        binding.shoesImage
-            .setImageResource(
-                sharedViewModel.selectedItem.value?.imageResId ?: R.drawable.high_heels)
-        binding.description.text = (sharedViewModel.selectedItem.value?.description ?: "")
+        val item = ShoeItem(
+            sharedViewModel.selectedItem.value?.imageResId ?: R.drawable.high_heels,
+            sharedViewModel.selectedItem.value?.description ?: "")
+
+        binding.data = item
     }
 }

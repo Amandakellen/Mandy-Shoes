@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- I used Constraint Layout in this case because it's easier to include the card that is behind the image with it.-->
+<!-- The ConstraintLayout was chosen due to the complexity of the layout and the need to position elements flexibly and responsively, providing a flat view hierarchy and efficient support for constraints..-->
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto">

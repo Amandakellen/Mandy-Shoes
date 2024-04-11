@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Utilizing LinearLayout because is a simple linear arrangement of UI elements-->
+<!-- Utilizing LinearLayout for its simplicity and straightforward alignment of UI elements in relation to each other in a linear arrangement.-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
